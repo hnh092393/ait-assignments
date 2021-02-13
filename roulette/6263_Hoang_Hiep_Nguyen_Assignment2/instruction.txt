@@ -1,0 +1,22 @@
+
+
+
+  **************** I N S T R U C T I O N********************
+  *							   *
+  *	1. Choose a mode One Player or Two Player	   *
+  *	2. Choose a level				   *
+  *	3. Enter the number of numbers you want to bet	   *
+  *	4. Enter amount of money for each number	   *
+  *	5. Press enter after entering numbers or money	   *
+  *	6. Time will be counting down, enter number 	   *
+  *	   and money before running out of time		   *
+  *	7. Easy level: You have $70 in your account	   *
+  *	   and earn 35 to 1 for payout  		   *
+  *	8. Normal level: You have $50 in your account	   *
+  *	   and earn 34 to 1 for payout  		   *
+  *	9. Hard level: You have $30 in your account	   *
+  *	   and earn 33 to 1 for payout  		   *
+  *	10.Winning when hitting $150			   *
+  *	11.Losing when lost all of money( Balance=0 )	   *
+  *							   *
+  **********************************************************

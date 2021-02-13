@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="@string/profile" />
+        <item android:id="@+id/nav_subject"
+            android:icon="@drawable/ic_subject"
+            android:title="@string/subjects" />
+        <item android:id="@+id/nav_timetable"
+            android:icon="@drawable/ic_timetable"
+            android:title="Timetable" />
+        <item android:id="@+id/nav_enrolment"
+            android:icon="@drawable/ic_enrolment"
+            android:title="Enrolment" />
+        <item android:id="@+id/nav_support"
+            android:icon="@drawable/ic_support"
+            android:title="Support" />
+    </group>
+</menu>
+
+
+    <!--tools:showIn="navigation_view"-->

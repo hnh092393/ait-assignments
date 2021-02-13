@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="94761798-2870-4deb-8282-f8a8301c6808" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:53355/Implementation/LogInImpl.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LogInImpl.wsdl" MetadataType="Wsdl" ID="e6d1b5b7-e0d7-40e4-afb3-49631997a6ce" SourceId="1" SourceUrl="http://localhost:53355/Implementation/LogInImpl.svc?wsdl" />
+    <MetadataFile FileName="LogInImpl.xsd" MetadataType="Schema" ID="aa5606b8-749a-467d-a395-8248fad1bd9c" SourceId="1" SourceUrl="http://localhost:53355/Implementation/LogInImpl.svc?xsd=xsd0" />
+    <MetadataFile FileName="LogInImpl.disco" MetadataType="Disco" ID="8ca43ee1-4319-4000-812a-329e7cc765e5" SourceId="1" SourceUrl="http://localhost:53355/Implementation/LogInImpl.svc?disco" />
+    <MetadataFile FileName="LogInImpl1.xsd" MetadataType="Schema" ID="013bb83b-afcf-43f4-bc76-4c7103c76c9d" SourceId="1" SourceUrl="http://localhost:53355/Implementation/LogInImpl.svc?xsd=xsd2" />
+    <MetadataFile FileName="LogInImpl2.xsd" MetadataType="Schema" ID="c5ff3ca8-92e7-4651-aa87-d4961ba96dc8" SourceId="1" SourceUrl="http://localhost:53355/Implementation/LogInImpl.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

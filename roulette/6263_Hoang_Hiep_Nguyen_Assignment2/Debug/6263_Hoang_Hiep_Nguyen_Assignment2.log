@@ -1,0 +1,3 @@
+﻿  Level.cpp
+c:\users\hnh092393\onedrive\documents\visual studio 2017\projects\6263_hoang_hiep_nguyen_assignment2\6263_hoang_hiep_nguyen_assignment2\control.h(15): error C3646: 'lev': unknown override specifier
+c:\users\hnh092393\onedrive\documents\visual studio 2017\projects\6263_hoang_hiep_nguyen_assignment2\6263_hoang_hiep_nguyen_assignment2\control.h(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int

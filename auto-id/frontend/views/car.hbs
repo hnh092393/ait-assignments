@@ -1,0 +1,54 @@
+<div>
+    <p>Owner:{{ownerInfo.owner}}</p>
+    <p>VinNo:{{ownerInfo.vinNo}}</p>
+</div>
+
+
+{{#each previousUsers}}
+    <p>Owner name:{{returnValues.previousOwner}}</p>
+    <p>Owned till{{returnValues.time}}</p>
+{{else}}
+    <p>No previous owners</p>
+{{/each}}
+
+{{#each service}}
+    <p>Owner name:{{returnValues.serviceCenter}}</p>
+    <p>Owned till{{returnValues.time}}</p>
+{{else}}
+    <p>No service Records</p>
+{{/each}}
+
+<form action="/trysell" method="post" id="form_try">
+    <h3>Try Sell</h3>
+    <input type="text" placeholder="Owner" name="owner">
+    <input type="text" placeholder="Private key" name="privatekey">
+    <input type="text" placeholder="Base Value" name="base">
+    <input type="text" placeholder="End Time" name="time">
+    <input type="submit" value="Submit">
+</form>
+<br>
+<br>
+<hr>
+<form action="/buy" method="post" id="form_buy">
+    <h3>Buy this car</h3>
+    <input type="text" name="bidderAddress" placeholder="Enter Address">
+    <input type="text" name="" placeholder="Enter Private Key">
+
+    <input type="number" name="amount" placeholder="Amount in Ether">
+    <input type="submit" value="Submit">
+
+</form>
+<br>
+<br>
+<hr>
+<form action="" method="post" id="form_sell">
+    <h3>Sell Car</h3>
+    <input type="text" placeholder="Enter Owner Address" name="owner">
+    <input type="text" placeholder="Enter Owner private key" name="privatekey">
+    <input type="text" placeholder="Enter New Owner Address" name="newOwner">
+    <input type="submit" value="Submit">
+    
+</form>
+
+
+<script src="/javascripts/carScript.js"></script>

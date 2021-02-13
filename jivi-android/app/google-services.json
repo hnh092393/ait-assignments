@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "603751852246",
+    "firebase_url": "https://jivifirebase.firebaseio.com",
+    "project_id": "jivifirebase",
+    "storage_bucket": "jivifirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603751852246:android:0366899bdf459e00",
+        "android_client_info": {
+          "package_name": "com.henry.jivi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603751852246-4rf80kjhfijeso4a7394ghsh87nlqgd2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.henry.jivi",
+            "certificate_hash": "ef0d42035d8a320cae2f381234b4934c9a66c9ef"
+          }
+        },
+        {
+          "client_id": "603751852246-1iseedho424tm1s9p4iqda22silba6o1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHqVK6CByIGQwjvofJI9YI0R-jCPC9bhM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "603751852246-1iseedho424tm1s9p4iqda22silba6o1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

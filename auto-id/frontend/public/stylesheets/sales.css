@@ -1,0 +1,21 @@
+h1 {
+    font-size: 32px
+}
+body {
+    background-color:#f4f4f4 
+}
+
+.sales-card {
+    padding: 10px;
+    background-color:#e0e0e0;
+    width: 20%;
+    float: left;
+    margin: 10px;
+    border: 1px solid#c9c9c9;
+    border-radius: 5px;
+    
+}
+
+.sales-card div,a{
+    font-size: 21px;
+}

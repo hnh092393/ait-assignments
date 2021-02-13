@@ -1,0 +1,218 @@
+﻿@model IEnumerable<AppView.Models.MediaViewDTO>
+
+@{
+    ViewBag.Title = "Index";
+    var MediaList = ViewData["MediaList"] as List<AppView.Models.MediaViewDTO>;
+    var ListItems = ViewData["SearchOptions"] as List<SelectListItem>;
+    string UserName = "";
+    if (Session["UserName"] != null)
+    {
+        UserName = (string)Session["UserName"];
+    }
+}
+
+<h2>AIT Library</h2>
+@{
+    if (UserName != "")
+    {
+        <h4>Welcome <strong>@UserName</strong> to AIT Library</h4>
+        <br />
+        if (UserName.ToLower().Contains("admin"))
+        {
+            <tr style="display: flex; justify-content: flex-end">
+                <td>
+                    @Html.ActionLink("Genre List", "Index", "GenreView") |
+                    @Html.ActionLink("Director List", "Index", "DirectorView") |
+                    @Html.ActionLink("Language List", "Index", "LanguageView") |
+                    @Html.ActionLink("User List", "Index", "UserView")
+                </td>
+            </tr>
+        }
+    }
+}
+@{
+    if (ViewData["IsSearchResult"] != null && (bool)ViewData["IsSearchResult"])
+    {
+        @Html.ActionLink("Back To List", "Index")
+    }
+}
+@using (Html.BeginForm("Search", "MediaView", FormMethod.Get))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-inline" style="margin-left:700px; margin-bottom:30px;">
+        <div class="form-group">
+            @Html.DropDownList("searchOption", new SelectList(ListItems, "Value", "Text"), new { @class = "form-control" })
+            @Html.TextBox("searchText", null, new { @class = "form-control", required = "required" })
+        </div>
+        <input type="submit" value="Search" class="btn btn-default" />
+    </div>
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MediaID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Genre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Director)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Language)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PublishYear)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Budget)
+        </th>
+        @{
+            if (UserName != "")
+            {
+                if (UserName.ToLower().Contains("user"))
+                {
+                    <th>
+                        Media Status
+                    </th>
+                }
+            }
+        }
+    </tr>
+
+    @foreach (var item in MediaList)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MediaID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Genre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Director)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Language)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PublishYear)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Budget)
+            </td>
+            @{ if (UserName != "")
+                {
+
+                    if (UserName.ToLower().Contains("user"))
+                    {
+                        bool IsStatusSet = false;
+                        if (UserName.ToLower().Contains("user"))
+                        {
+                            var BorrowListByOtherUser = ViewData["BorrowListByOtherUsers"] as List<int>;
+                            var ReserveListByOtherUser = ViewData["ReserveListByOtherUsers"] as List<int>;
+                            foreach (int MediaID in BorrowListByOtherUser)
+                            {
+                                if (MediaID == item.MediaID && !IsStatusSet)
+                                {
+                                    <td>
+                                        Not Available
+                                    </td>
+                                    IsStatusSet = true;
+                                }
+                            }
+                            foreach (int MediaID in ReserveListByOtherUser)
+                            {
+                                if (MediaID == item.MediaID && !IsStatusSet)
+                                {
+                                    <td>
+                                        Not Available
+                                    </td>
+                                    IsStatusSet = true;
+                                }
+                            }
+                            var ReserveListByThisUser = ViewData["ReserveListByThisUser"] as List<int>;
+                            foreach (int MediaID in ReserveListByThisUser)
+                            {
+                                if (MediaID == item.MediaID)
+                                {
+                                    <td>
+                                        Reserved
+                                    </td>
+                                    <td>
+                                        @Html.ActionLink("Borrow", "Borrow", "BorrowView", new { MediaID = item.MediaID }, null)
+                                    </td>
+                                    IsStatusSet = true;
+                                }
+                            }
+                            var BorrowListByThisUser = ViewData["BorrowListByThisUser"] as List<int>;
+                            foreach (int MediaID in BorrowListByThisUser)
+                            {
+                                if (MediaID == item.MediaID)
+                                {
+                                    <td>
+                                        Borrowed
+                                    </td>
+                                    <td>
+                                        @Html.ActionLink("Return", "Return", "BorrowView", new { MediaID = item.MediaID }, null)
+                                    </td>
+                                    IsStatusSet = true;
+                                }
+                            }
+                            if (!IsStatusSet)
+                            {
+                                <td>
+                                    Available
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Borrow", "Borrow", "BorrowView", new { MediaID = item.MediaID }, null) |
+                                    @Html.ActionLink("Reserve", "Reserve", "ReserveView", new { MediaID = item.MediaID }, null)
+                                </td>
+                            }
+                        }
+                    }
+                    else
+                    {
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new
+                       {
+                           Id = item.MediaID,
+                           Title = item.Title,
+                           Genre = item.Genre,
+                           Director = item.Director,
+                           Language = item.Language,
+                           PublishYear = item.PublishYear,
+                           Budget = item.Budget
+                       }) |
+                            @Html.ActionLink("Delete", "Delete", new { Id = item.MediaID }, new { onclick = "return confirm('Are you sure you   wish to delete this article?');" })
+                        </td>
+                    }
+                }
+            }
+        </tr>
+    }
+    @{
+        if (UserName != "")
+        {
+            if (UserName.ToLower().Contains("admin"))
+            {
+                <td>
+                    @Html.ActionLink("Add New Media", "Create", new { })
+                </td>
+                <td>
+                    @Html.ActionLink("Report Borrowed Media", "ReportBorrowedMedia", new { })
+                </td>
+                <td>
+                    @Html.ActionLink("Report Reserved Media", "ReportReservedMedia", new { })
+                </td>
+            }
+        }
+    }
+</table>

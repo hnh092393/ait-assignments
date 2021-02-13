@@ -1,0 +1,7 @@
+C:\Users\hnh092393\Google Drive\Downloads\Projects\Visual Studio\CloudApplication\CloudApplication\AppService\bin\AppService.dll.config
+C:\Users\hnh092393\Google Drive\Downloads\Projects\Visual Studio\CloudApplication\CloudApplication\AppService\bin\AppService.dll
+C:\Users\hnh092393\Google Drive\Downloads\Projects\Visual Studio\CloudApplication\CloudApplication\AppService\bin\AppService.pdb
+C:\Users\hnh092393\Google Drive\Downloads\Projects\Visual Studio\CloudApplication\CloudApplication\AppService\obj\Debug\AppService.csprojAssemblyReference.cache
+C:\Users\hnh092393\Google Drive\Downloads\Projects\Visual Studio\CloudApplication\CloudApplication\AppService\obj\Debug\AppService.csproj.CoreCompileInputs.cache
+C:\Users\hnh092393\Google Drive\Downloads\Projects\Visual Studio\CloudApplication\CloudApplication\AppService\obj\Debug\AppService.dll
+C:\Users\hnh092393\Google Drive\Downloads\Projects\Visual Studio\CloudApplication\CloudApplication\AppService\obj\Debug\AppService.pdb

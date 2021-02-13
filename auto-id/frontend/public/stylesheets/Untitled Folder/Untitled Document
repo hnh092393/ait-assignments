@@ -1,0 +1,18 @@
+<div class="container-fluid">
+    <div class="row">
+        {{#each carCurrent}}
+        
+            <div class="card  col-md-2 ml-1">
+                <div class="card-body">
+                    <p class="card-text">Bidding Time :{{bidTime}}</p>
+                    <p class="card-text">Minimum Bid :{{bid}}</p>
+                    <a href="/car?vehicle={{vehicleAddress}}&index={{index}}" class="btn btn-primary">See More</a>
+
+                    
+                </div>
+            </div>
+            {{else}}
+            <p>No car for sales at the moment</p>
+        {{/each}}
+    </div>
+</div>

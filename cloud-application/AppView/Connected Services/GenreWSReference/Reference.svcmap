@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8f1489d1-0473-4554-84ca-836a59fed1b4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:53355/Implementation/GenreImpl.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="GenreImpl.disco" MetadataType="Disco" ID="e17ec0fb-eb4c-46e8-8a55-7dac280621f2" SourceId="1" SourceUrl="http://localhost:53355/Implementation/GenreImpl.svc?disco" />
+    <MetadataFile FileName="GenreImpl.xsd" MetadataType="Schema" ID="b1fb986e-961f-4981-8506-e55be58582f7" SourceId="1" SourceUrl="http://localhost:53355/Implementation/GenreImpl.svc?xsd=xsd0" />
+    <MetadataFile FileName="GenreImpl1.xsd" MetadataType="Schema" ID="afd869d0-7940-477f-815c-b173672f881b" SourceId="1" SourceUrl="http://localhost:53355/Implementation/GenreImpl.svc?xsd=xsd2" />
+    <MetadataFile FileName="GenreImpl.wsdl" MetadataType="Wsdl" ID="588196d0-ab08-435e-86f1-567877addc31" SourceId="1" SourceUrl="http://localhost:53355/Implementation/GenreImpl.svc?wsdl" />
+    <MetadataFile FileName="GenreImpl2.xsd" MetadataType="Schema" ID="83abea10-08ae-421b-b17c-ea34062d70fe" SourceId="1" SourceUrl="http://localhost:53355/Implementation/GenreImpl.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

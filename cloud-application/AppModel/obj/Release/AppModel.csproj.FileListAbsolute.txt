@@ -1,0 +1,14 @@
+C:\Users\hnh092393\Google Drive\Downloads\Projects\Visual Studio\EnterpriseSystemsApplicationPrototype\AppModel\bin\Release\AppModel.dll.config
+C:\Users\hnh092393\Google Drive\Downloads\Projects\Visual Studio\EnterpriseSystemsApplicationPrototype\AppModel\bin\Release\AppModel.dll
+C:\Users\hnh092393\Google Drive\Downloads\Projects\Visual Studio\EnterpriseSystemsApplicationPrototype\AppModel\bin\Release\AppModel.pdb
+C:\Users\hnh092393\Google Drive\Downloads\Projects\Visual Studio\EnterpriseSystemsApplicationPrototype\AppModel\obj\Release\AppModel.csprojAssemblyReference.cache
+C:\Users\hnh092393\Google Drive\Downloads\Projects\Visual Studio\EnterpriseSystemsApplicationPrototype\AppModel\obj\Release\AppModel.csproj.CoreCompileInputs.cache
+C:\Users\hnh092393\Google Drive\Downloads\Projects\Visual Studio\EnterpriseSystemsApplicationPrototype\AppModel\obj\Release\AppModel.dll
+C:\Users\hnh092393\Google Drive\Downloads\Projects\Visual Studio\EnterpriseSystemsApplicationPrototype\AppModel\obj\Release\AppModel.pdb
+C:\Users\hnh092393\Google Drive\Downloads\Projects\Visual Studio\CloudApplication\AppModel\bin\Release\AppModel.dll.config
+C:\Users\hnh092393\Google Drive\Downloads\Projects\Visual Studio\CloudApplication\AppModel\bin\Release\AppModel.dll
+C:\Users\hnh092393\Google Drive\Downloads\Projects\Visual Studio\CloudApplication\AppModel\bin\Release\AppModel.pdb
+C:\Users\hnh092393\Google Drive\Downloads\Projects\Visual Studio\CloudApplication\AppModel\obj\Release\AppModel.csprojAssemblyReference.cache
+C:\Users\hnh092393\Google Drive\Downloads\Projects\Visual Studio\CloudApplication\AppModel\obj\Release\AppModel.csproj.CoreCompileInputs.cache
+C:\Users\hnh092393\Google Drive\Downloads\Projects\Visual Studio\CloudApplication\AppModel\obj\Release\AppModel.dll
+C:\Users\hnh092393\Google Drive\Downloads\Projects\Visual Studio\CloudApplication\AppModel\obj\Release\AppModel.pdb

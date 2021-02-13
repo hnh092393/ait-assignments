@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="99956d85-b3ee-4dec-a301-b196ff742b2b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:53355/Implementation/BorrowImpl.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BorrowImpl.xsd" MetadataType="Schema" ID="acbfb89b-4c47-4fb3-92d2-ed209ef7ac17" SourceId="1" SourceUrl="http://localhost:53355/Implementation/BorrowImpl.svc?xsd=xsd2" />
+    <MetadataFile FileName="BorrowImpl1.xsd" MetadataType="Schema" ID="911c1fd9-173b-4a26-90fc-5c63e248179c" SourceId="1" SourceUrl="http://localhost:53355/Implementation/BorrowImpl.svc?xsd=xsd3" />
+    <MetadataFile FileName="BorrowImpl2.xsd" MetadataType="Schema" ID="1052d60e-7c8c-42df-bac2-e569f39441fb" SourceId="1" SourceUrl="http://localhost:53355/Implementation/BorrowImpl.svc?xsd=xsd0" />
+    <MetadataFile FileName="BorrowImpl3.xsd" MetadataType="Schema" ID="5da9d0c1-eb83-4ec6-9c6e-fb0941d02df4" SourceId="1" SourceUrl="http://localhost:53355/Implementation/BorrowImpl.svc?xsd=xsd1" />
+    <MetadataFile FileName="BorrowImpl.wsdl" MetadataType="Wsdl" ID="0ff88b17-35b4-47c7-8806-ea29b7151dd3" SourceId="1" SourceUrl="http://localhost:53355/Implementation/BorrowImpl.svc?wsdl" />
+    <MetadataFile FileName="BorrowImpl.disco" MetadataType="Disco" ID="76fabd71-30f5-42c5-9871-79021eefd9f7" SourceId="1" SourceUrl="http://localhost:53355/Implementation/BorrowImpl.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

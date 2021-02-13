@@ -1,0 +1,43 @@
+﻿@model IEnumerable<AppView.Models.DirectorViewDTO>
+
+@{
+    ViewBag.Title = "Director";
+    var DirectorList = ViewData["DirectorList"] as List<AppView.Models.DirectorViewDTO>;
+}
+
+<h2>Director</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DirectorName)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in DirectorList)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DirectorName)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { Id = item.DID, DirectorName = item.DirectorName }) |
+                @Html.ActionLink("Delete", "Delete", new { Id = item.DID }, new { onclick = "return confirm('Are you sure you wish to delete this Director?');" })
+            </td>
+        </tr>
+    }
+
+</table>
+<div>
+    @Html.ActionLink("Back to Media List", "Index", "MediaView")
+</div>

@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="/stylesheets/sales.css">
+<h1>Sales</h1>
+
+<div>
+    {{#each carCurrent}}
+    <div class="sales-card">
+        <div>From: {{time}}</div>
+        <div>Bid time {{bidTime}}</div>
+        <div>Time left {{timeLeft}} minutes</div>
+        <div>Minimum price : Ξ {{bid}} (ether)</div>
+        <a href="/car?vehicle={{vehicleAddress}}&index={{index}}">Click Here for more info</a>
+
+    </div>
+
+    {{else}}
+        <div class="sales-card"><div>No cars on sales at the moment</div></div>
+    {{/each}}
+
+</div>
+
+

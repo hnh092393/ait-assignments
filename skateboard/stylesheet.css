@@ -1,0 +1,256 @@
+/* GLOBAL STYLES
+******************************/
+html {
+	box-sizing: border-box;
+    padding: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html {
+    font-size: 1rem;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0.25rem solid black;
+    text-align: justify;
+}
+img {
+    width: 100%;
+}
+  
+/* HEADER STYLES
+******************************/
+header {
+	display: flex;
+	min-height: 27rem;
+	background-image: url("images/banner.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+    justify-content: space-between;
+}
+/* Logo */
+.logo {
+    max-width: 25%;
+}
+/* Nav Bar */
+nav ul {
+    background: black;
+    list-style-type: none;
+    text-align: center;
+    border-radius: 0 0 1rem 1rem;
+}
+nav li {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: -5px;
+    position: relative;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+nav a:hover {
+    background: #F1F1F1;
+    color: #333;
+    border-radius: 0 0 1rem 1rem;
+}
+/* Dropdown Menu */
+.dropdown {
+    display: none;
+    position: absolute;
+}
+nav li:hover .dropdown {
+    display: block;
+}
+.dropdown li {
+    margin-left: 0 !important;
+}
+/* Hamburger Menu*/
+.nav-button {
+    width: 80%;
+    height: 80%;
+    background:transparent;
+    display: flex;
+    flex-direction: row;
+    display:none;
+}
+.nav-line {
+    width: 100%;
+    margin: 8px 4px 2px 0;
+    height: 3px;
+    background:#FF6600;
+}
+/* MAIN STYLES
+******************************/
+main {
+    padding: 1rem;
+    line-height: 2rem;
+    max-width: 1080px;
+    margin: auto;
+}
+.checkout{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	width:100%;
+	margin:1em auto;
+	padding:0 auto;
+	max-height:3em;
+}
+.symbol{
+	width:3%;
+	max-height:2em;
+}
+.products{
+	display:flex;
+	flex-direction:row;
+}
+.product-detail{
+	width:100%;
+	padding:1em;
+	text-align:center;
+}
+#checkmore{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+#checkmore .text{
+	width:100%;
+	text-align:center;
+}
+#checkmore .symbol{
+	margin:0 auto;
+}
+.heading {
+	 background-color: #c4bd97;
+	 height: 4rem;
+	 line-height: 4rem;
+	 text-align: center;
+}
+input.button {
+	width:11em;
+	height:2em;
+	background-color: yellow;
+	border:3px solid black;
+	border-radius:0.5em;
+	font-size: 1em;
+	font-weight:bald;
+	margin: auto;
+	padding:0.3em;
+}
+input#subproduct-button {
+	width:10em;
+	margin-left:45%;
+}
+.skate-lession {
+	display:flex;
+	flex-direction:row;
+	margin:1.5em;
+}
+.video {
+	width:45%;
+	margin-right:5%
+}
+.guide-text {
+	width: 50%;
+	text-align: justify;
+}
+iframe {
+	width: 100%;
+	height: 18em;
+}
+.map {
+	margin-top:2em;
+	height: auto;
+}
+.map img {
+	height:100%;
+}
+.container {
+	margin:5em 2em 5em 2em;
+	display:flex;
+	flex-direction:row;
+}
+.form {
+	width: 50%;
+    padding: 1rem;
+    background: lightblue;
+}
+.information {
+	padding: 4em 5em 0 5em;
+}
+input {
+	margin: 0.5em 0 0.5em 0;
+}
+.park {
+	margin-top: 4em;
+}
+
+/* FOOTER STYLES
+******************************/
+footer {
+	height:20em;
+	padding-top:2em;
+}
+
+/* MOBILE STYLES
+******************************/
+@media screen and (max-width: 768px) {
+	.nav-button {
+		display: inline-block;
+		margin: 1rem;
+	}
+    .heading {
+        font-size: 0.75rem;
+    }
+	header {
+		justify-content: space-between;
+		height: 15rem;
+	}
+	.logo {
+		margin-left: 40%;
+	}
+	nav ul {
+        display: none;
+        border-radius: 0px;
+	}
+    nav a {
+        font-size: 0.75rem;
+    }
+    nav a:hover {
+        border-radius: 0px;
+    }
+	.showing {
+        display: inline-block;
+	}
+	nav {
+        width: 20%;
+    }
+	.nav-icon {
+		width:40%;
+	}
+	nav .dropdown {
+		right: 100%;
+	}
+	.products {
+		flex-direction: column;
+		width: 100%;
+	}
+    .container {
+        flex-direction: column;
+    }
+    .form, .information {
+        width: 100%;
+        padding: 1rem;
+    }
+ 
+}

@@ -1,0 +1,4 @@
+id: roy
+pw: 123
+
+Account type is randomly selected each time the application is closed and reopened.

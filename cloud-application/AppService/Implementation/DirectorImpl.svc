@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="AppService.DirectorImpl" CodeBehind="DirectorImpl.svc.cs" %>

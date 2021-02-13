@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="acaf820d-72a7-465c-b5fd-f321bf24ab18" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:53355/Implementation/LanguageImpl.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LanguageImpl.disco" MetadataType="Disco" ID="572bba26-1f3b-4927-90aa-e27bb0a57b04" SourceId="1" SourceUrl="http://localhost:53355/Implementation/LanguageImpl.svc?disco" />
+    <MetadataFile FileName="LanguageImpl.xsd" MetadataType="Schema" ID="a46f1191-4cb2-419e-bc52-93f2d29c6849" SourceId="1" SourceUrl="http://localhost:53355/Implementation/LanguageImpl.svc?xsd=xsd0" />
+    <MetadataFile FileName="LanguageImpl.wsdl" MetadataType="Wsdl" ID="3212df6e-d958-4b6e-ba62-fe8d983531e5" SourceId="1" SourceUrl="http://localhost:53355/Implementation/LanguageImpl.svc?wsdl" />
+    <MetadataFile FileName="LanguageImpl1.xsd" MetadataType="Schema" ID="2337c7c9-cd23-462d-9c0d-78371216cbf0" SourceId="1" SourceUrl="http://localhost:53355/Implementation/LanguageImpl.svc?xsd=xsd2" />
+    <MetadataFile FileName="LanguageImpl2.xsd" MetadataType="Schema" ID="2c16339d-caf2-4713-a33b-405643b53e6e" SourceId="1" SourceUrl="http://localhost:53355/Implementation/LanguageImpl.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

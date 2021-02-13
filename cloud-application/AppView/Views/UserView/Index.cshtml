@@ -1,0 +1,61 @@
+﻿@model IEnumerable<AppView.Models.UserViewDTO>
+
+@{
+    ViewBag.Title = "User";
+    var UserList = ViewData["UserList"] as List<AppView.Models.UserViewDTO>;
+}
+
+<h2>User</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserLevel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserEmail)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in UserList)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserLevel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserEmail)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { Id = item.UID, UserName = item.UserName, Password = item.Password, UserLevel = item.UserLevel, Email = item.UserEmail }) |
+                @Html.ActionLink("Delete", "Delete", new { Id = item.UID }, new { onclick = "return confirm('Are you sure you wish to delete this Genre?');" })
+            </td>
+        </tr>
+    }
+
+</table>
+<div>
+    @Html.ActionLink("Back to Media List", "Index", "MediaView")
+</div>

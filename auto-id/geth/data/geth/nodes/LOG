@@ -1,0 +1,13 @@
+=============== May 25, 2019 (IST) ===============
+17:06:24.796731 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:06:24.902280 db@open opening
+17:06:24.903231 version@stat F·[] S·0B[] Sc·[]
+17:06:24.958561 db@janitor F·2 G·0
+17:06:24.958676 db@open done T·56.320307ms
+18:47:11.130745 memdb@flush N·47556 S·3MiB
+18:47:16.621329 memdb@flush created L0@3 N·47556 S·647KiB "n:\x00..ing,v1034":"version,v1"
+18:47:16.731605 version@stat F·[1] S·647KiB[647KiB] Sc·[0.25]
+18:47:19.286898 memdb@flush committed F·1 T·6.147407145s
+18:47:21.304958 journal@remove removed @1
+18:57:21.081881 db@close closing
+18:57:21.090509 db@close done T·8.618835ms

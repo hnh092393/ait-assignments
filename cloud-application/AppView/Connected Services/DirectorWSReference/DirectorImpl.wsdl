@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DirectorImpl" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:53355/Implementation/DirectorImpl.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:53355/Implementation/DirectorImpl.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:53355/Implementation/DirectorImpl.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/AppService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDirector_GetAllDirector_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllDirector" />
+  </wsdl:message>
+  <wsdl:message name="IDirector_GetAllDirector_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllDirectorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDirector_IsDirectorInserted_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsDirectorInserted" />
+  </wsdl:message>
+  <wsdl:message name="IDirector_IsDirectorInserted_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsDirectorInsertedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDirector_IsDirectorUpdated_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsDirectorUpdated" />
+  </wsdl:message>
+  <wsdl:message name="IDirector_IsDirectorUpdated_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsDirectorUpdatedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDirector_IsDirectorDeleted_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsDirectorDeleted" />
+  </wsdl:message>
+  <wsdl:message name="IDirector_IsDirectorDeleted_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsDirectorDeletedResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IDirector">
+    <wsdl:operation name="GetAllDirector">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDirector/GetAllDirector" message="tns:IDirector_GetAllDirector_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDirector/GetAllDirectorResponse" message="tns:IDirector_GetAllDirector_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsDirectorInserted">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDirector/IsDirectorInserted" message="tns:IDirector_IsDirectorInserted_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDirector/IsDirectorInsertedResponse" message="tns:IDirector_IsDirectorInserted_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsDirectorUpdated">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDirector/IsDirectorUpdated" message="tns:IDirector_IsDirectorUpdated_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDirector/IsDirectorUpdatedResponse" message="tns:IDirector_IsDirectorUpdated_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsDirectorDeleted">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDirector/IsDirectorDeleted" message="tns:IDirector_IsDirectorDeleted_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDirector/IsDirectorDeletedResponse" message="tns:IDirector_IsDirectorDeleted_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IDirector" type="tns:IDirector">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllDirector">
+      <soap:operation soapAction="http://tempuri.org/IDirector/GetAllDirector" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsDirectorInserted">
+      <soap:operation soapAction="http://tempuri.org/IDirector/IsDirectorInserted" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsDirectorUpdated">
+      <soap:operation soapAction="http://tempuri.org/IDirector/IsDirectorUpdated" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsDirectorDeleted">
+      <soap:operation soapAction="http://tempuri.org/IDirector/IsDirectorDeleted" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DirectorImpl">
+    <wsdl:port name="BasicHttpBinding_IDirector" binding="tns:BasicHttpBinding_IDirector">
+      <soap:address location="http://localhost:53355/Implementation/DirectorImpl.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

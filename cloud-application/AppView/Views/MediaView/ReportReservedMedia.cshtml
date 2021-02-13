@@ -1,0 +1,43 @@
+﻿@model IEnumerable<AppView.ReserveWSReference.ReserveDTO>
+@{ ViewBag.Title = "ReportBorrowedMedia";
+    var ReservedMediaList = ViewData["ReserveList"] as AppView.ReserveWSReference.ReserveDTO[];
+}
+
+<h2>ReportBorrowedMedia</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReserveDate)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in ReservedMediaList)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReserveDate)
+            </td>
+        </tr>
+    }
+
+</table>
+<div>
+    @Html.ActionLink("Back to Media List", "Index", "MediaView")
+</div>

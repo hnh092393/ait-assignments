@@ -1,0 +1,43 @@
+﻿@model IEnumerable<AppView.Models.GenreViewDTO>
+
+@{
+    ViewBag.Title = "Genre";
+    var GenreList = ViewData["GenreList"] as List<AppView.Models.GenreViewDTO>;
+}
+
+<h2>Genre</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.GID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GenreName)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in GenreList)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.GID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GenreName)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { Id = item.GID, GenreName = item.GenreName }) |
+                @Html.ActionLink("Delete", "Delete", new { Id = item.GID }, new { onclick = "return confirm('Are you sure you wish to delete this Genre?');" })
+            </td>
+        </tr>
+    }
+
+</table>
+<div>
+    @Html.ActionLink("Back to Media List", "Index", "MediaView")
+</div>

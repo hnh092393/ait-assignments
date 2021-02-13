@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b85a2587-08d2-4aeb-95b2-b1b1c5f26df6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:53355/Implementation/DirectorImpl.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DirectorImpl.disco" MetadataType="Disco" ID="fca41e94-b4b4-4538-8656-ad2503e8a00c" SourceId="1" SourceUrl="http://localhost:53355/Implementation/DirectorImpl.svc?disco" />
+    <MetadataFile FileName="DirectorImpl.xsd" MetadataType="Schema" ID="410a0cc1-69b7-43cc-9f8a-7abe26584bcc" SourceId="1" SourceUrl="http://localhost:53355/Implementation/DirectorImpl.svc?xsd=xsd2" />
+    <MetadataFile FileName="DirectorImpl1.xsd" MetadataType="Schema" ID="8836a88c-9141-4789-950c-29e2f3ef0515" SourceId="1" SourceUrl="http://localhost:53355/Implementation/DirectorImpl.svc?xsd=xsd1" />
+    <MetadataFile FileName="DirectorImpl.wsdl" MetadataType="Wsdl" ID="3d6fe4bc-4a1e-46cd-ada5-5432217aed2c" SourceId="1" SourceUrl="http://localhost:53355/Implementation/DirectorImpl.svc?wsdl" />
+    <MetadataFile FileName="DirectorImpl2.xsd" MetadataType="Schema" ID="43ef2edb-b5cc-4828-9285-0da3e6aed3a7" SourceId="1" SourceUrl="http://localhost:53355/Implementation/DirectorImpl.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

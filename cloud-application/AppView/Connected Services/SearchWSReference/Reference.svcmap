@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="77d2f1ed-d1a0-4c82-a114-bd95da7dd23e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:53355/Implementation/SearchImpl.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SearchImpl.disco" MetadataType="Disco" ID="48929f28-2f49-479b-82d7-4969123449ec" SourceId="1" SourceUrl="http://localhost:53355/Implementation/SearchImpl.svc?disco" />
+    <MetadataFile FileName="SearchImpl.xsd" MetadataType="Schema" ID="3429753b-16ce-4d09-b01b-e56722b52bdc" SourceId="1" SourceUrl="http://localhost:53355/Implementation/SearchImpl.svc?xsd=xsd1" />
+    <MetadataFile FileName="SearchImpl.wsdl" MetadataType="Wsdl" ID="84ae4e91-5b07-497c-a35a-66b8fd9f6ee9" SourceId="1" SourceUrl="http://localhost:53355/Implementation/SearchImpl.svc?wsdl" />
+    <MetadataFile FileName="SearchImpl1.xsd" MetadataType="Schema" ID="06f74262-714a-4ddc-90f6-00ca9d9fcca9" SourceId="1" SourceUrl="http://localhost:53355/Implementation/SearchImpl.svc?xsd=xsd0" />
+    <MetadataFile FileName="SearchImpl2.xsd" MetadataType="Schema" ID="7f546b4a-956f-4aca-a30b-0b8162f81255" SourceId="1" SourceUrl="http://localhost:53355/Implementation/SearchImpl.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

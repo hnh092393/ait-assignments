@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="453357c9-7e14-4967-9663-864f119b85f6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:53355/Implementation/ReserveImpl.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ReserveImpl.wsdl" MetadataType="Wsdl" ID="c73d4561-f2a9-48c4-a84d-61b4f90f70bc" SourceId="1" SourceUrl="http://localhost:53355/Implementation/ReserveImpl.svc?wsdl" />
+    <MetadataFile FileName="ReserveImpl.xsd" MetadataType="Schema" ID="14f9bd33-4670-4885-a6f1-26802080d178" SourceId="1" SourceUrl="http://localhost:53355/Implementation/ReserveImpl.svc?xsd=xsd0" />
+    <MetadataFile FileName="ReserveImpl1.xsd" MetadataType="Schema" ID="3423f235-f91e-402d-827b-4edc690aa687" SourceId="1" SourceUrl="http://localhost:53355/Implementation/ReserveImpl.svc?xsd=xsd3" />
+    <MetadataFile FileName="ReserveImpl2.xsd" MetadataType="Schema" ID="35a973ec-c3e1-4a14-832f-aa3dd5ec70e2" SourceId="1" SourceUrl="http://localhost:53355/Implementation/ReserveImpl.svc?xsd=xsd2" />
+    <MetadataFile FileName="ReserveImpl3.xsd" MetadataType="Schema" ID="4b06d432-1f3e-49da-845e-c13ce008a2a6" SourceId="1" SourceUrl="http://localhost:53355/Implementation/ReserveImpl.svc?xsd=xsd1" />
+    <MetadataFile FileName="ReserveImpl.disco" MetadataType="Disco" ID="f9af07e6-3e02-4663-8270-5a3f7549ac5d" SourceId="1" SourceUrl="http://localhost:53355/Implementation/ReserveImpl.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

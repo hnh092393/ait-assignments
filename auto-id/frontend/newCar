@@ -1,0 +1,48 @@
+pragma solidity ^0.5.0; 
+
+
+contract Car{
+    struct carInfo{
+        string vin;
+        bool exist;
+    }
+    mapping  (address=>carInfo[]) public owner;
+    
+    
+    event serviceRecods(uint time,address ownerAddress,address serviceAddress);
+    event sell(uint time,uint bidTime,uint bid);
+    // modifier onlyOwner{
+    //     require(owner[msg.sender]);
+    //     _;
+    // }
+    
+    // Functions 
+    
+    function newCar(string memory _vin) public{
+        carInfo memory car = carInfo(_vin,true);
+        owner[msg.sender].push(car);
+    }
+    
+    function getInfo(address _owner,uint _i) public view returns(string memory _car){
+        return owner[_owner][_i].vin;
+    }
+    function carLength(address _owner) public view returns(uint leng){
+        leng = owner[_owner].length;
+    }
+    
+    
+    function onSale(uint i,uint salesTime,uint bid) public{
+        require(owner[msg.sender][i].exist);
+        emit sell(now,now+(salesTime*1 minutes),bid);
+        
+        
+        
+    }
+    
+    // function serviceInfo() public{
+        
+        
+    // }
+    
+    
+}

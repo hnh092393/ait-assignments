@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="AppService.MediaImpl" CodeBehind="MediaImpl.svc.cs" %>
